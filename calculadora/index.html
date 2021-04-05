@@ -1,35 +1,29 @@
 <!DOCTYPE html>
-<head>
-    <title>Ex4</title>
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <fieldset>
+    <legend>Calculadora Javascripto e HTML</legend>
+    <label>Valor 1:</label>
+    <input id="caixa1" type="text"/>
+<br>
+    <label>Valor 2: </label>
+    <input id="caixa2" type="text"/>
+    <p>selecione uma operação</p>
+    <select id="operacao" name="Conta">
+        <option value="Soma"> Soma </option>
+        <option value="Subtrair"> Subtrair </option>
+        <option value="Dividir"> Dividir </option>
+        <option value="Multiplicar"> Multiplicar </option>
+    </select>
 
-    <form action="" method="GET">
-        <div>
-            <label for="n1">Digite o primeiro valor:</label>
-            <input type="number" id="Numero1" />
-        </div>
-        <br>
-        <div>
-            <label for="n2">Digite o segundo valor:</label>
-            <input type="number" id="Numero2" />
-        </div>
-
-        <br>
-
-            <label for="n1">Selecione uma opção:</label>
-            <select name="calculo" id="calculadora">
-                <option onclick ="opcao1" value=""></option>
-                <option onclick="opcao2" value="Soma">Soma</option>
-                <option onclick ="opcao3" value="Subtração">Subtração</option>
-                <option onclick ="opcao4" value="Multiplicação">Multiplicação</option>
-                <option onclick ="opcao5" value="Divisão">Divisão</option>
-            </select>
-    </form>
-
-    <br>
-
-    <input type="button" value="Calcular" onclick="Calcular();">
-    
-</body>
+    <button id="somar" onclick="calculo()">Calcular</button>
+</fieldset>
+    <script src="script.js"></script>
+  </body>
 </html>
