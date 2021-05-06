@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Aula 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("input").click(function(){
+       $("#p1").hide();
+       $("#p2").css('font-size', 40);
+       $("#p3").css('color', "blue");
+       $("#p4").css("text-align", "center");
+       $("#p5").css('color', "green");
+       $("#p5").css('font-size', 10);
+       $("#p6").text("JavaScript não é java");
+       $("#p6").css('color', "red");
+       $("#p6").css('font-weight', "bold");
+       $("p:odd").css("background-color", "yellow");
+
+    
+            
+
+
+   });
+});
+</script>
+
+</head>
+<body>
+    <p id="p1">Isso</p>
+    <p id="p2">Não é </p>
+    <p id="p3">Magica!</p>
+    <p id="p4">Isso é</p>
+    <p id="p5">JavaScript, </p>
+    <p id="p6">Meu querido!</p>
+
+   
+    <input type="button" value="Mudar">
+
+
+</body>
+
+</html>
